@@ -14,29 +14,45 @@
   --danger-soft: #fef2f2;
   --warning: #d97706;
   --warning-soft: #fffbeb;
-  --shadow: 0 10px 30px rgba(15, 23, 42, .07);
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.07);
   --radius: 18px;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
   min-width: 320px;
   background: var(--bg);
   color: var(--text);
-  font: 16px/1.5 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font:
+    16px/1.5 Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
 }
 
-button, input { font: inherit; }
+button,
+input {
+  font: inherit;
+}
 
-button { cursor: pointer; }
+button {
+  cursor: pointer;
+}
 
 button:disabled {
   cursor: not-allowed;
-  opacity: .55;
+  opacity: 0.55;
 }
 
 .app-shell {
@@ -54,7 +70,7 @@ button:disabled {
   justify-content: space-between;
   gap: 16px;
   padding: 14px max(20px, calc((100vw - 1120px) / 2));
-  background: rgba(255,255,255,.92);
+  background: rgba(255, 255, 255, 0.92);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(14px);
 }
@@ -81,21 +97,26 @@ button:disabled {
   color: var(--muted);
   font-size: 10px;
   font-weight: 800;
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
 }
 
-h1, h2, h3, p { margin-top: 0; }
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 
 h1 {
   margin-bottom: 0;
   font-size: 20px;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
 }
 
 h2 {
   margin-bottom: 4px;
   font-size: 20px;
-  letter-spacing: -.02em;
+  letter-spacing: -0.02em;
 }
 
 h3 {
@@ -127,15 +148,17 @@ h3 {
   background: transparent;
   color: var(--muted);
   font-weight: 800;
-  transition: .18s ease;
+  transition: 0.18s ease;
 }
 
-.tab:hover { color: var(--text); }
+.tab:hover {
+  color: var(--text);
+}
 
 .tab.is-active {
   background: var(--surface);
   color: var(--primary);
-  box-shadow: 0 2px 8px rgba(15, 23, 42, .08);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
 }
 
 .grid {
@@ -143,8 +166,12 @@ h3 {
   gap: 16px;
 }
 
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .card {
   background: var(--surface);
@@ -154,7 +181,9 @@ h3 {
   box-shadow: var(--shadow);
 }
 
-.card + .card { margin-top: 16px; }
+.card + .card {
+  margin-top: 16px;
+}
 
 .card-header {
   display: flex;
@@ -164,8 +193,12 @@ h3 {
   margin-bottom: 18px;
 }
 
-.muted { color: var(--muted); }
-.small { font-size: 13px; }
+.muted {
+  color: var(--muted);
+}
+.small {
+  font-size: 13px;
+}
 
 .section-label {
   margin: 0 0 10px;
@@ -173,7 +206,7 @@ h3 {
   font-size: 12px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
 }
 
 .option {
@@ -185,7 +218,7 @@ h3 {
   background: var(--surface);
   color: var(--text);
   text-align: left;
-  transition: .18s ease;
+  transition: 0.18s ease;
 }
 
 .option:hover {
@@ -210,7 +243,9 @@ h3 {
   font-size: 13px;
 }
 
-.field { margin-top: 16px; }
+.field {
+  margin-top: 16px;
+}
 
 label {
   display: block;
@@ -227,18 +262,18 @@ label {
   outline: none;
   background: var(--surface);
   color: var(--text);
-  transition: .15s ease;
+  transition: 0.15s ease;
 }
 
 .input:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, .10);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
 .amount-input {
   font-size: 28px;
   font-weight: 750;
-  letter-spacing: -.03em;
+  letter-spacing: -0.03em;
 }
 
 .result-box {
@@ -253,8 +288,14 @@ label {
   border: 1px solid var(--border);
 }
 
-.result-label { color: var(--muted); font-size: 13px; }
-.result-value { font-size: 22px; font-weight: 850; }
+.result-label {
+  color: var(--muted);
+  font-size: 13px;
+}
+.result-value {
+  font-size: 22px;
+  font-weight: 850;
+}
 
 .btn {
   width: 100%;
@@ -262,14 +303,27 @@ label {
   border-radius: 13px;
   padding: 14px 16px;
   font-weight: 850;
-  transition: .18s ease;
+  transition: 0.18s ease;
 }
 
-.btn:hover:not(:disabled) { transform: translateY(-1px); }
-.btn-primary { background: var(--primary); color: #fff; }
-.btn-primary:hover:not(:disabled) { background: var(--primary-dark); }
-.btn-success { background: var(--success); color: #fff; }
-.btn-danger { background: var(--danger); color: #fff; }
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--primary-dark);
+}
+.btn-success {
+  background: var(--success);
+  color: #fff;
+}
+.btn-danger {
+  background: var(--danger);
+  color: #fff;
+}
 .btn-ghost {
   width: auto;
   padding: 9px 12px;
@@ -291,10 +345,22 @@ label {
   background: var(--surface-soft);
 }
 
-.metric-label { color: var(--muted); font-size: 12px; font-weight: 750; }
-.metric-value { margin-top: 4px; font-size: 22px; font-weight: 900; letter-spacing: -.03em; }
+.metric-label {
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 750;
+}
+.metric-value {
+  margin-top: 4px;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
 
-.sale-list { display: grid; gap: 0; }
+.sale-list {
+  display: grid;
+  gap: 0;
+}
 
 .sale-row {
   display: flex;
@@ -305,12 +371,24 @@ label {
   border-bottom: 1px solid var(--border);
 }
 
-.sale-row:last-child { border-bottom: 0; }
+.sale-row:last-child {
+  border-bottom: 0;
+}
 
-.sale-main { min-width: 0; }
-.sale-title { font-weight: 750; }
-.sale-meta { color: var(--muted); font-size: 13px; }
-.sale-total { white-space: nowrap; font-weight: 850; }
+.sale-main {
+  min-width: 0;
+}
+.sale-title {
+  font-weight: 750;
+}
+.sale-meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+.sale-total {
+  white-space: nowrap;
+  font-weight: 850;
+}
 
 .badge {
   display: inline-flex;
@@ -332,9 +410,18 @@ label {
   font-weight: 750;
 }
 
-.message.success { color: #15803d; background: var(--success-soft); }
-.message.error { color: #b91c1c; background: var(--danger-soft); }
-.message.warning { color: #a16207; background: var(--warning-soft); }
+.message.success {
+  color: #15803d;
+  background: var(--success-soft);
+}
+.message.error {
+  color: #b91c1c;
+  background: var(--danger-soft);
+}
+.message.warning {
+  color: #a16207;
+  background: var(--warning-soft);
+}
 
 .auth-card {
   max-width: 460px;
@@ -366,9 +453,13 @@ label {
   background: var(--surface-soft);
 }
 
-.price-card .input { margin-top: 10px; }
+.price-card .input {
+  margin-top: 10px;
+}
 
-.table-wrap { overflow-x: auto; }
+.table-wrap {
+  overflow-x: auto;
+}
 
 table {
   width: 100%;
@@ -376,19 +467,23 @@ table {
   min-width: 520px;
 }
 
-th, td {
+th,
+td {
   padding: 13px 10px;
   text-align: right;
   border-bottom: 1px solid var(--border);
 }
 
-th:first-child, td:first-child { text-align: left; }
+th:first-child,
+td:first-child {
+  text-align: left;
+}
 
 th {
   color: var(--muted);
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: .05em;
+  letter-spacing: 0.05em;
 }
 
 .total-row td {
@@ -441,8 +536,12 @@ th {
   background: var(--warning);
 }
 
-.connection-status.online .status-dot { background: var(--success); }
-.connection-status.error .status-dot { background: var(--danger); }
+.connection-status.online .status-dot {
+  background: var(--success);
+}
+.connection-status.error .status-dot {
+  background: var(--danger);
+}
 
 .footer {
   width: min(100% - 32px, 1120px);
@@ -455,21 +554,415 @@ th {
 }
 
 @media (max-width: 760px) {
-  .container { width: min(100% - 20px, 1120px); padding-top: 14px; }
-  .topbar { padding: 12px 14px; }
-  .connection-status span:last-child { display: none; }
-  .grid-3, .price-grid { grid-template-columns: 1fr; }
-  .summary-grid { grid-template-columns: repeat(2, 1fr); }
-  .card { padding: 17px; border-radius: 15px; }
-  .footer { width: min(100% - 20px, 1120px); }
+  .container {
+    width: min(100% - 20px, 1120px);
+    padding-top: 14px;
+  }
+  .topbar {
+    padding: 12px 14px;
+  }
+  .connection-status span:last-child {
+    display: none;
+  }
+  .grid-3,
+  .price-grid {
+    grid-template-columns: 1fr;
+  }
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    padding: 17px;
+    border-radius: 15px;
+  }
+  .footer {
+    width: min(100% - 20px, 1120px);
+  }
 }
 
 @media (max-width: 430px) {
-  body { font-size: 15px; }
-  .tab { padding: 11px 5px; font-size: 13px; }
-  .tab span { display: none; }
-  .grid-2 { grid-template-columns: 1fr 1fr; }
-  .summary-grid { gap: 8px; }
-  .metric { padding: 13px; }
-  .metric-value { font-size: 19px; }
+  body {
+    font-size: 15px;
+  }
+  .tab {
+    padding: 11px 5px;
+    font-size: 13px;
+  }
+  .tab span {
+    display: none;
+  }
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .summary-grid {
+    gap: 8px;
+  }
+  .metric {
+    padding: 13px;
+  }
+  .metric-value {
+    font-size: 19px;
+  }
+}
+
+/* =========================================================
+   CORTE Y EXPORTACIÓN
+   ========================================================= */
+
+.cut-toolbar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cut-date-control {
+  flex: 1;
+  max-width: 230px;
+}
+
+.cut-date-control label {
+  margin-bottom: 7px;
+}
+
+.export-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-export {
+  width: auto;
+  min-width: 130px;
+  min-height: 46px;
+  padding: 11px 16px;
+}
+
+.btn-excel {
+  background: #15803d;
+  color: #fff;
+}
+
+.btn-excel:hover:not(:disabled) {
+  background: #166534;
+}
+
+.btn-pdf {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.btn-pdf:hover:not(:disabled) {
+  background: #991b1b;
+}
+
+.sale-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.payment-summary {
+  margin-top: 8px;
+}
+
+/* =========================================================
+   MEJORAS TÁCTILES
+   ========================================================= */
+
+button,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  touch-action: manipulation;
+}
+
+.input,
+.btn,
+.option {
+  min-height: 46px;
+}
+
+.delete-btn {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .container {
+    width: min(100% - 24px, 760px);
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .cut-toolbar {
+    align-items: stretch;
+  }
+
+  .cut-date-control {
+    max-width: none;
+  }
+
+  .export-actions {
+    flex: 1;
+  }
+
+  .btn-export {
+    flex: 1;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .topbar {
+    position: sticky;
+    padding: max(10px, env(safe-area-inset-top)) 12px 10px;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px 10px 28px;
+  }
+
+  .tabs {
+    position: sticky;
+    top: 61px;
+    z-index: 15;
+
+    margin: 0 -2px 14px;
+
+    border-radius: 13px;
+  }
+
+  .tab {
+    min-height: 48px;
+    padding: 10px 7px;
+  }
+
+  .card {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 15px;
+  }
+
+  .card-header > .badge {
+    align-self: flex-start;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  .option {
+    min-height: 70px;
+    padding: 12px;
+  }
+
+  .amount-input {
+    min-height: 58px;
+    font-size: 25px;
+  }
+
+  .result-box {
+    min-height: 58px;
+  }
+
+  .btn {
+    min-height: 48px;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .metric {
+    min-width: 0;
+    padding: 12px;
+  }
+
+  .metric-label {
+    font-size: 10px;
+  }
+
+  .metric-value {
+    font-size: 18px;
+    overflow-wrap: anywhere;
+  }
+
+  .sale-row {
+    padding: 12px 0;
+  }
+
+  .sale-main {
+    min-width: 0;
+  }
+
+  .sale-title,
+  .sale-meta {
+    overflow-wrap: anywhere;
+  }
+
+  .sale-total {
+    font-size: 14px;
+  }
+
+  /* Corte */
+
+  .cut-toolbar {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cut-date-control {
+    max-width: none;
+    width: 100%;
+  }
+
+  .date-control {
+    width: 100%;
+    max-width: none;
+    min-height: 48px;
+  }
+
+  .export-actions {
+    width: 100%;
+  }
+
+  .btn-export {
+    min-height: 50px;
+    min-width: 0;
+  }
+
+  /* Tabla desplazable */
+
+  .table-wrap {
+    margin: 0 -15px;
+    padding: 0 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  table {
+    min-width: 460px;
+  }
+
+  th,
+  td {
+    padding: 12px 9px;
+  }
+
+  /* Detalle */
+
+  .sale-actions {
+    gap: 7px;
+  }
+
+  .delete-btn {
+    min-width: 40px;
+    min-height: 40px;
+  }
+
+  /* Footer */
+
+  .footer {
+    width: 100%;
+    padding: 0 12px 20px;
+
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+}
+
+/* =========================================================
+   TELÉFONOS PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .export-actions {
+    flex-direction: column;
+  }
+
+  .btn-export {
+    width: 100%;
+  }
+
+  .tab {
+    font-size: 12px;
+  }
+}
+
+/* =========================================================
+   MODO LANDSCAPE EN TELÉFONOS
+   ========================================================= */
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .topbar {
+    position: relative;
+  }
+
+  .tabs {
+    position: relative;
+    top: auto;
+  }
+
+  .container {
+    padding-top: 8px;
+  }
+}
+
+/* =========================================================
+   REDUCE MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
 }
